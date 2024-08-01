@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    transition: 500ms;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* =================== Header style ===================== */
+
+.header {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul {
+    display: flex;
+    gap: 50px;
+}
+
+.header ul li a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    padding: 10px;
+}
+
+.header ul li a {
+    position: relative;
+
+}
+
+.header ul li a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    border-radius: 5px;
+    transition: 500ms;
+}
+
+.header ul li .active::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: '';
+    width: 80%;
+    height: 3px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.header ul li a:hover::after {
+    width: 80%;
+}
+
+.header .login {
+    padding: 10px 30px;
+    border-radius: 100px;
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* ====================== Banner 1 ====================== */
+.bg {
+    background: linear-gradient(174.48deg, #FD749B -12.41%, #281AC8 88.56%);
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomBg {
+    width: 100%;
+    margin-bottom: -50px;
+}
+
+
+.banner h2 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 60px;
+    text-align: left;
+    width: 450px;
+    color: #FFFFFF;
+
+}
+
+.banner .text span {
+    font-weight: 700;
+}
+
+
+
+.banner p {
+    width: 460px;
+    height: 54px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.bg .banner .text .started {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 100px;
+    background-color: #fff;
+    padding: 15px 25px;
+}
+
+.bg .banner .text .started span {
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ========== Banner 2 ===============*/
+
+.banner2 {
+    display: flex;
+
+}
+
+.banner2 h3 {
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 28px;
+    line-height: 42px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+.banner2 h3::after {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 10%;
+    height: 7px;
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    border-radius: 7px;
+    transition: 500ms;
+
+}
+
+.banner2 .text a.bottom {
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 100px;
+    color: #FFFFFF;
+    margin-top: 20px;
+
+
+}
+
+
+.services {
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    height: 1000px;
+}
+
+.services .path1 {
+    transform: rotate(180deg);
+    width: 100%;
+    margin-top: -35px;
+}
+
+.services .wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.services .path2 {
+    width: 100%;
+}
+
+.trade {
+    background: url('./BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding-top: 100px;
+    margin: 100px 0 -50px;
+}
+
+.trade .wrap {
+    background: #fff;
+    width: 60%;
+    margin: auto;
+    padding: 100px;
+    box-shadow: 0px 50px 100px 0px #0000001A;
+    border-radius: 30px;
+
+}
+
+
+.trade .wrap h3 {
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+
+
+
+.trade .wrap h3::after {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 5%;
+    height: 7px;
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    border-radius: 7px;
+    transition: 500ms;
+    margin: auto;
+
+}
+
+
+
+.trade .wrap .boxes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.trade .wrap .boxes .box {
+    border: 1px solid rgba(253, 116, 155, 1);
+    border-radius: 10px;
+    padding: 50px;
+    width: 20%;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.trade .wrap .boxes .box p {
+    color: #333333;
+    padding-top: 10px;
+}
+
+/* ======= yangi qism ======= */
+
+.blog {
+    padding: 100px 0;
+}
+
+
+.blog .ourH3 {  
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.blog .ourH3::after {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 50px;
+    height: 7px;
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    border-radius: 7px;
+    transition: 500ms;
+    margin: auto;
+}
+
+.blog .ourP {
+    text-align: center;
+    margin: 30px 0 100px;
+    font-size: 16px;
+}
+
+
+.blog .read {
+    display: flex;
+    gap: 50px;
+}
+
+.blog .read .box {
+    background-color: #fff;
+    width: 30%;
+    height: 30%;
+    border: 1px solid rgba(253, 116, 155, 1);
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    transition: 500ms;
+    filter: grayscale(100%);
+}
+
+.blog .read .box:hover {
+    transform: scale(1.4);
+    filter: grayscale(0%);
+    z-index: 55;
+}
+
+.blog .read .box h3 {
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blog .redmore {
+    padding: 10px 30px;
+    border-radius: 100px;
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+
+
+/*   ==================    happy ================ */
+
+.happyBg {
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+}
+
+.happyBg .path1 {
+    transform: rotate(180deg);
+    width: 100%;
+    margin-top: -35px;
+}
+
+.happyBg .path2 {
+    width: 100%;
+    margin-bottom: -35px;
+}
+
+.happyBg .info {
+    padding: 100px 0;
+}
+
+
+.happyBg .info .infoH3 {
+    font-size: 25px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.happyBg .info .infoH3::after {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 50px;
+    height: 7px;
+    background: #FD749B;
+    border-radius: 7px;
+    transition: 500ms;
+    margin: auto;
+
+}
+
+
+.happyBg .info .infoP {
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.happyBg .info img {
+    margin: auto;
+}
+
+
+.download {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.download .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.download h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.download h3::after {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 50px;
+    height: 7px;
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    border-radius: 7px;
+    transition: 500ms;
+    margin: auto;
+
+}
+
+.download p {
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+.CoinBase2 {
+    height: 600px;
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+
+}
+
+.CoinBase2 .path1 {
+    transform: rotate(180deg);
+    width: 100%;
+    margin-top: -35px;
+
+}
+
+.CoinBase2 .wrap {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/* ========================== Email ============================== */
+.Email {
+    margin-top: 350px;
+    text-align: center;
+}
+
+.Email h3 {
+    font-size: 28px;
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+
+}
+
+.Email h3::after {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 50px;
+    height: 7px;
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    border-radius: 7px;
+    transition: 500ms;
+    margin: auto;
+}
+
+.Email p {
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(51, 51, 51, 1);
+}
+
+.Email form {
+    margin-top: 50px;
+    padding: 50px 0;
+
+}
+
+.Email form input {
+    border-radius: 100px;
+    padding: 10px;
+    width: 20%;
+    border: 1px solid rgba(253, 116, 155, 1);
+}
+
+
+.Email button {
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    padding: 10px 30px 10px 30px;
+    border-radius: 100px;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* ===================== Footer ===================== */
+footer{
+    background-color: black;
+    width: 100%;
+    margin-top: 70px;
+    
+}
+.wrapper{
+    padding-top: 80px;
+}
+footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.firstpart{
+    width: 30%;
+    
+}
+.firstpart img{
+    margin-bottom: 40px;
+}
+.firstpart p{
+    color: rgba(162, 162, 162, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.firstpart .logos{
+    margin-top: 20px;
+    word-spacing: 20px;
+}
+.links{
+width: 20%;
+
+}
+.links h2{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 30px;
+}
+.links p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+    color: rgba(162, 162, 162, 1);
+}
+.contact{
+    width: 10%;
+}
+.contact h2{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 30px;
+    
+    
+}
+.contact p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+    color: rgba(162, 162, 162, 1); 
+    margin-bottom: 40px; 
+}
+.insta{
+width: 30%;
+}
+.insta h2{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 30px;
+}
+.insta .wrap5{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.insta .wrap5 .box{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(196, 196, 196, 1);
+    position: relative;
+    transition: 500ms;
+}
+
+.insta .wrap5 .box::after{
+    content: "+";
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    display: none;
+    transition: 500ms;
+    
+}
+.insta .wrap5 .box:hover::after{
+   display: block;
+    
+}
+
+
